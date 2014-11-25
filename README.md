@@ -8,7 +8,7 @@ Depends on office 2013 + windows.
 
 ## Installation
 
-  npm install node-msoffice-pdf
+   npm install node-msoffice-pdf
   
 ## Usage
 
@@ -64,7 +64,8 @@ Depends on office 2013 + windows.
           }
       });
    });
-
+   
+   
 ## Contributing
 
   Github for issues & PR, MIT license, yada yada
