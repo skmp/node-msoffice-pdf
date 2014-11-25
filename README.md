@@ -73,6 +73,7 @@ msopdf(null, function(office) {
   
 ## Release History
 
+* 0.0.4 Fix package.json
 * 0.0.4 Update README.md (x2)
 * 0.0.3 Update README.md
 * 0.0.2 (Mostly?) working prototype
