@@ -17,7 +17,7 @@ var msopdf = require('node-msoffice-pdf');
 msopdf(null, function(office) { 
 
    /*
-     There's a queue on the background thread on C#, so adding things is non-blocking.
+     There is a queue on the background thread, so adding things is non-blocking.
    */
    
    office.word({input: "infile.doc", output: "outfile.pdf"}, function(error, pdf) {
