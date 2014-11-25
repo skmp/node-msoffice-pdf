@@ -1,7 +1,7 @@
 {
-  "name": "mode-msoffice-pdf",
-  "version": "0.0.1",
-  "description": "Saves docs as pdfs",
+  "name": "node-msoffice-pdf",
+  "version": "0.0.2",
+  "description": "Exports various microsoft office formats to pdfs",
   "author": "Stefanos Kornilios Mitsis Poiitidis (skmp@nillware.com)",
   "main": "lib.js",
   "scripts": {
@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "node-uuid" : "*"
-  }
+  },
   "license": "MIT"
 }
