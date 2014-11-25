@@ -168,7 +168,6 @@ public class Startup
     
     private void closeInternal() {
         Delay(4);
-        Console.WriteLine("Time to quit now ..\n");
         
         if (msword != null) {
           try {

@@ -1,7 +1,8 @@
 var edge = require('edge');
+var path  = require('path');
 
 module.exports = edge.func({
-    source: 'office.cs',
+    source: path.join(path.dirname(module.filename), 'office.cs'),
     references: [ 
         'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.Word\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.Word.dll',
         'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.Excel\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.Excel.dll',

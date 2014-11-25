@@ -1,8 +1,9 @@
 {
   "name": "node-msoffice-pdf",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "description": "Exports various microsoft office formats to pdfs",
   "author": "Stefanos Kornilios Mitsis Poiitidis (skmp@nillware.com)",
+  "files": [ "office.cs", "lib.js" ],
   "main": "lib.js",
   "scripts": {
     "test": "node testrunner.js"
