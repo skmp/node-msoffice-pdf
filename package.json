@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Saves docs as pdfs",
   "author": "Stefanos Kornilios Mitsis Poiitidis (skmp@nillware.com)",
+  "main": "lib.js",
+  "scripts": {
+    "test": "node testrunner.js"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/skmp/node-msoffice-pdf"
@@ -12,8 +16,10 @@
     "pdf"
   ],
   "dependecies": {
-    "edge" : "*",
-    "node-uuid" : "*"
+    "edge" : "*"
   },
+  "devDependencies": {
+    "node-uuid" : "*"
+  }
   "license": "MIT"
 }

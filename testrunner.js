@@ -1,28 +1,19 @@
-var edge = require('edge');
+var mso_pdf = require('./lib');
 var uuid = require('node-uuid');
 
-var Office = edge.func({
-    source: 'office.cs',
-    references: [ 
-        'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.Word\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.Word.dll',
-        'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.Excel\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.Excel.dll',
-        'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.PowerPoint\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.PowerPoint.dll',
-        'C:\\Windows\\assembly\\GAC_MSIL\\Office\\15.0.0.0__71e9bce111e9429c\\Office.dll',
-        'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Vbe.Interop\\15.0.0.0__71e9bce111e9429c\\Microsoft.Vbe.Interop.dll'
-    ],
-});
+
 
 var okay = 0, errors = 0;
 
-Office(null, function (error, office) {
+mso_pdf(null, function (error, office) {
     if (error) { 
-        console.log("Failed to open word");
-        throw error;
+        console.log("Failed to init");
+        return;
     }
     
     for (var i = 0; i< 45; i++) {
         office.word({
-            input: "tests\\test.docx",
+            input: "testcases\\test.docx",
             output: "output.doc." + uuid.v4() + ".pdf"
         }, function (error, pdf) {    
             if (error) { 
@@ -36,7 +27,7 @@ Office(null, function (error, office) {
         });
         
         office.excel({
-            input: "tests\\test.xlsx",
+            input: "testcases\\test.xlsx",
             output: "output.xls." + uuid.v4() + ".pdf"
         }, function (error, pdf) {    
             if (error) {
@@ -50,7 +41,7 @@ Office(null, function (error, office) {
         });
         
          office.powerPoint({
-            input: "tests\\test.pptx",
+            input: "testcases\\test.pptx",
             output: "output.ppt." + uuid.v4() + ".pdf"
         }, function (error, pdf) {    
             if (error) {
