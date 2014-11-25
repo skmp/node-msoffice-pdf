@@ -24,7 +24,7 @@ msopdf(null, function(office) {
       if (error) {
            /* 
                Sometimes things go wrong, re-trying usually gets the job done
-               Could not get remoting to repiably not crash on my laptop
+               Could not get remoting to reliably not crash on my laptop
            */
            console.log("Woops", error);
        } else {
@@ -73,5 +73,6 @@ msopdf(null, function(office) {
   
 ## Release History
 
+* 0.0.4 Update README.md (x2)
 * 0.0.3 Update README.md
 * 0.0.2 (Mostly?) working prototype
