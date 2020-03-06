@@ -17,7 +17,7 @@
     "pdf"
   ],
   "dependencies": {
-    "edge" : "*"
+    "edge-js" : "*"
   },
   "devDependencies": {
     "node-uuid" : "*"
