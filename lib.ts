@@ -1,7 +1,7 @@
-var edge = require('edge-js');
-var path  = require('path');
+import edge from "edge-js";
+import path from "node:path";
 
-module.exports = edge.func({
+export default edge.func({
     source: path.join(path.dirname(module.filename), 'office.cs'),
     references: [ 
         'C:\\Windows\\assembly\\GAC_MSIL\\Microsoft.Office.Interop.Word\\15.0.0.0__71e9bce111e9429c\\Microsoft.Office.Interop.Word.dll',
